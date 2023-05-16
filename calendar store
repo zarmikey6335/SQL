@@ -1,0 +1,26 @@
+# SQL
+SQL portfolio
+-- Create a calendar store data base
+CREATE TABLE calendar_store (
+id INTEGER PRIMARY KEY, brand TEXT, year TEXT, format TEXT, theme TEXT, material TEXT, prize REAL, sold NUMERIC);
+
+INSERT INTO calendar_store VALUES (1, "lemome home", 2022, "desk", "holidays", "paper", 12.99, 25);
+INSERT INTO calendar_store VALUES (2, "peach home", 2022, "outdoor", "spring", "paper", 12.99, 40);
+INSERT INTO calendar_store VALUES (3, "vibrant home", 2022, "outdoor", "summer", "paper", 12.99, 50);
+INSERT INTO calendar_store VALUES (4, "happy home", 2022, "outdoor", "holidays", "paper", 12.99, 25);
+INSERT INTO calendar_store VALUES (5, "plain home", 2022, "wall", "spring", "paper", 12.99,40);
+INSERT INTO calendar_store VALUES (6, "sports", 2022, "outdoor", "spring", "paper", 10.99, 80);
+INSERT INTO calendar_store VALUES (7, "peach home", 2022, "outdoor", "spring", "paper", 12.99, 60);
+INSERT INTO calendar_store VALUES (8, "plain", 2022, "desk", "spring", "paper", 12.99, 40);
+INSERT INTO calendar_store VALUES (9, "harmony", 2022, "outdoor", "spring", "paper", 12.99, 70);
+INSERT INTO calendar_store VALUES (10, "blessed home", 2022, "plain", "summer", "paper", 12.99, 35);
+INSERT INTO calendar_store VALUES (11, "peach home", 2022, "outdoor", "spring", "paper", 12.99, 65);
+INSERT INTO calendar_store VALUES (12, "peach home", 2022, "outdoor", "spring", "paper", 12.99, 50);
+INSERT INTO calendar_store VALUES (13, "peach home", 2022, "outdoor", "spring", "paper", 12.99, 50);
+INSERT INTO calendar_store VALUES (14, "peach home", 2022, "outdoor", "spring", "paper", 12.99, 35);
+INSERT INTO calendar_store VALUES (15, "peach home", 2022, "outdoor", "spring", "paper", 12.99, 50);
+
+SELECT * FROM calendar_store;
+
+SELECT SUM(sold) AS total_dollars_paid
+    FROM calendar_store;
